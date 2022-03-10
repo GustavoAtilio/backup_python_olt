@@ -43,7 +43,7 @@ class OltSSH:
 if __name__ == "__main__":
     args = sys.argv[1:]
     if len(args) != 5:
-        print("Informar 4 args [main.py ip user password port fila_name]")
+        print("Informar 4 args [main.py ip user password port file_name]")
     else:
         ip = args[0]
         user = args[1]
