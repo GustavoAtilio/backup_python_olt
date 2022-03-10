@@ -49,8 +49,8 @@ if __name__ == "__main__":
         user = args[1]
         password = args[2]
         port = args[3]
-        fila_name = args[4]
-        olt = OltSSH(ip=str(ip), authUsername=user, autPassword=password, file_name=fila_name, difinePort=22 )
+        file_name = args[4]
+        olt = OltSSH(ip=str(ip), authUsername=user, autPassword=password, file_name=file_name, difinePort=22 )
         r = threading.Thread(target=olt.read, args=())
         r.start()
         comands = ["enable", "terminal length 0", "show running-config", "no terminal length"]
